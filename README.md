@@ -3,7 +3,7 @@
 GhostTunnel is a covert backdoor transmission method that can be used in an isolated environment. It can attack the target through the HID device only to release the payload (agent), then the HID device can be removed after the payload is released.
 
 GhostTunnel use 802.11 Probe Request Frames and Beacon Frames to communicate and doesn't need to establish a wifi connection. Exactly, it communicates by embedding data in beacon and probe requests. We publish the GhostTunnel server and windows agent implemented in c/c++. The agent doesn't need elevated privileges, it uses the system wifi api to send the probe request and receive the beacon. such as on windows, uses the Native WiFi API. So you can implement the corresponding agent on other platforms. The server runs on linux, you need one or two usb wifi card that supports monitor mode and packet injection to run it. 
-
+GhostTunnel 使用802.11探测请求帧和信标帧进行通信，无需建立WiFi连接。确切地说，它通过在信标和探测请求中嵌入数据来进行通信。我们发布了以C/C++实现的GhostTunnel服务器和Windows代理。代理不需要提升的权限，它使用系统WiFi API发送探测请求并接收信标，例如在Windows上使用本地WiFi API。因此，你可以在其他平台上实现相应的代理。服务器在Linux上运行，你需要一个或两个支持监控模式和数据包注入的USB WiFi卡来运行它。
 
 # Advantages
 
